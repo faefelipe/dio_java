@@ -1,39 +1,57 @@
 public class Operadores {
     public static void main(String[] args) {
-        String nome = "Felipe";
-        double soma = 10.5 + 15.7;
-        int subtracao = 113 - 25;
-        int divisao = 15 / 3;
-        int modulo = 18 % 3;
+
+        boolean condicao1 = true;
+        boolean condicao2 = false;
+
+        if(condicao1 && condicao2) {
+            System.out.println("as duas condicoes são verdadeiras");
+        }
+
+        if(condicao1 || condicao2) {
+            System.out.println("uma das condicoes é verdadeira");
+        }
         
-        String nomeCompleto = "Linguagem" + "Java";
-        System.out.println(nomeCompleto);
-        System.out.println(nome);
-        System.out.println(soma);
-        System.out.println(subtracao);
-        System.out.println(divisao);
-        System.out.println(modulo);
+        String nomeUm = "Felipe";
+        String nomeDois = new String("Felipe");
 
-        String concatenacao = "?";
-
-        concatenacao = 1+1+1+"1";
-        System.out.println(concatenacao);
-
-        concatenacao = 1+"1"+1+1;
-        System.out.println(concatenacao);
-
-        concatenacao = "1"+1+1+1;
-        System.out.println(concatenacao);
-
-        concatenacao = "1"+(1+1+1);
-        System.out.println(concatenacao);
-
+        System.out.println(nomeUm.equals(nomeDois));
         int numero = 5;
-        numero = - numero;
 
-        System.out.println("aqui: " + numero);
-
-        numero = numero * -1;
+        System.out.println(++ numero);
+        System.out.println(numero++);
         System.out.println(numero);
+
+        System.out.println(--numero);
+        System.out.println(numero--);
+        System.out.println(numero);
+
+        boolean variavel = true;
+        variavel = !variavel;
+        System.out.println(variavel);
+
+        int a, b;
+        a = 5;
+        b = 6;
+
+        String resultado = a==b ? "Verdadeiro" : "falso";
+
+        System.out.println(resultado);
+
+        int numero1 = 1;
+        int numero2 = 2;
+
+        boolean simNao = numero1 == numero2;
+
+        System.out.println("numeroUm é igual a numeroDois? " + simNao);
+
+        simNao = numero1 != numero2;
+
+        System.out.println("numeroUm é diferente do numeroDois? " + simNao);
+
+        simNao = numero1 > numero2;
+
+        System.out.println("numeroUm é maior que numeroDois? " + simNao);
+
     }
 }
